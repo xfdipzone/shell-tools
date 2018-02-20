@@ -6,7 +6,3 @@ Shell开发的小程序工具，不定期更新。
 * [aliyun-rds-export-unzip](https://github.com/xfdipzone/Shell-Tools/tree/master/aliyun-rds-export-unzip)<br>
 阿里云RDS导出数据库结构整理工具
 <br>
-<<<<<<< HEAD
-
-=======
->>>>>>> 9f2f7f540ff98fa2272060dc8eca51a3629adc29
