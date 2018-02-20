@@ -21,5 +21,5 @@
 ## 整理步骤
 1.解压文件<br><br>
 2.解压后文件按数据表名重命名<br><br>
-3.删除AUTO_INCREMENT及ROW_FORMAT设定参数<br><br>
-4.去掉文件的utf8 bom头
+3.删除`AUTO_INCREMENT`及`ROW_FORMAT`设定参数<br><br>
+4.去掉文件的`utf8 bom`头
