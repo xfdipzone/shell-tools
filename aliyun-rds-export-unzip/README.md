@@ -1,5 +1,5 @@
 # aliyun-rds-export-unzip
-阿里云RDS导出数据库结构整理工<br><br>
+阿里云RDS导出数据库结构整理工具<br><br>
 
 ## 介绍
 使用shell实现一个小工具，可以整理阿里云RDS导出数据库结构的zip文件，整理为可直接使用的sql文件。<br><br>
