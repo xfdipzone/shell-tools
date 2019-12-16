@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -o nounset
+set -o errexit
+
 # 解压阿里云导出的数据库zip文件，执行重命名，转utf8 not bom编码，删除无用语句等处理
 # 
 # Date:     2017-12-18
