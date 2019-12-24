@@ -8,7 +8,6 @@ set -o errexit
 # Date:     2017-12-18
 # Author:   fdipzone
 # Ver:      1.0
-#
 
 # 保存解压后重命名的sql文件
 sqlfile=()
