@@ -5,7 +5,7 @@ set -o errexit
 
 # 更新CSS文件内引用文件的版本
 # 如background:url('images/test.jpg'); 更新为 background:url('images/test.jpg?20191224121212');
-# 
+#
 # Date:     2019-12-24
 # Author:   fdipzone
 # Ver:      1.0
@@ -46,7 +46,7 @@ function tolog(){
 
 function update(){
     if [ -d "$csstmpl_path" ] && [ -d "$css_path" ]; then
-        
+
         if [ "$search_child" -eq 0 ]; then
             maxdepth=" -maxdepth 1 "
         else
