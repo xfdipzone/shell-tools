@@ -22,9 +22,9 @@
 readonly process_config=('mytest.php,120')
 ```
 
-**mytest.php** 为监控进程的关键字
+`mytest.php` 为监控进程的关键字
 
-**120** 为进程运行的超时时间（秒）
+`120` 为进程运行的超时时间（秒）
 
 ### 执行
 
