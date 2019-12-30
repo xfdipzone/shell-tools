@@ -44,7 +44,7 @@ readonly process_config=('mytest.php,120')
 # 循环监控进程
 for config in ${process_config[*]}; do
 
-	# 获取进程关键字机超时时间
+	# 获取进程关键字及超时时间
 	process=$(echo $config|awk -F ',' '{print $1}')
 	expire=$(echo $config|awk -F ',' '{print $2}')
 
