@@ -56,6 +56,13 @@ for config in ${process_config[*]}; do
 		# 获取进程运行时间
 		process_runtime=$(ps -eo pid,etime|grep " $process_id "|awk -F ' ' '{print $2}')
 
+		if [[ -z "$process_runtime" ]]; then
+
+			# 获取进程运行时间
+			process_runtime=$(ps -eo pid,etime|grep "$process_id "|awk -F ' ' '{print $2}')
+
+		fi
+
 		# 将进程运行时间转为秒数
 		process_runtime_second=$(get_etime_seconds $process_runtime)
 
