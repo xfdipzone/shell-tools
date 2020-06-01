@@ -3,7 +3,7 @@
 set -o nounset
 set -o errexit
 
-# shell实现OSS上传，下载，删除功能
+# Shell实现OSS上传，下载，删除功能
 # OSS 上传，下载，删除
 #
 # Date:     2020-05-26
