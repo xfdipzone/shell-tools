@@ -1,6 +1,6 @@
 # shell-oss
 
-shell实现OSS上传下载删除工具
+Shell实现OSS上传，下载，删除工具
 
 ---
 
@@ -27,17 +27,17 @@ readonly access_key="${OSS_ACCESS_KEY}"
 上传
 
 ```shell
-./oss.sh put local.png oss.png
+./shell_oss.sh put local.png oss.png
 ```
 
 下载
 
 ```shell
-./oss.sh get oss.png local.png
+./shell_oss.sh get oss.png local.png
 ```
 
 删除
 
 ```shell
-./oss.sh del oss.png
+./shell_oss.sh del oss.png
 ```
