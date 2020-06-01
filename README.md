@@ -13,3 +13,5 @@ Shell开发的小程序工具，不定期更新。
 * [监控并终止超时进程工具](https://github.com/xfdipzone/Shell-Tools/tree/master/monitor-kill-expire-process) (monitor-kill-expire-process)
 
 * [批量压缩图片工具](https://github.com/xfdipzone/Shell-Tools/tree/master/image-compress) (image-compress)
+
+* [shell实现OSS上传下载删除工具](https://github.com/xfdipzone/Shell-Tools/tree/master/shell-oss) (shell-oss)
