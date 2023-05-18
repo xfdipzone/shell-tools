@@ -11,12 +11,12 @@ set -o errexit
 # Ver:      1.0
 
 # 设定
-readonly folder_path='/photo'   # 图片目录路径
+readonly folder_path='/photo' # 图片目录路径
 
-readonly max_size='1024k' # 图片大小允许值
-readonly max_width=1280   # 图片最大宽度
-readonly max_height=1280  # 图片最大高度
-readonly quality=85       # 图片质量
+readonly max_size='512k' # 图片大小允许值
+readonly max_width=1280  # 图片最大宽度
+readonly max_height=1280 # 图片最大高度
+readonly quality=85      # 图片质量
 
 # 压缩处理
 function compress(){

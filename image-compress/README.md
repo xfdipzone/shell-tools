@@ -8,6 +8,8 @@
 
 使用 `shell` 实现一个小工具，检查目录及子目录中图片(`jpg`,`gif`,`png`)，将大于指定值的图片进行压缩处理。
 
+需要安装 `ImageMagick`
+
 ---
 
 ## 使用说明
@@ -27,14 +29,14 @@
 例如：
 
 ```shell
-floder_path=/photo
-max_size=1024k
+folder_path=/photo
+max_size=512k
 max_width=1280
 max_height=1280
 quality=85
 ```
 
-表示检查 `/photo` 目录及子目录中，大小大于 `1024k` 的图片，执行压缩处理
+表示检查 `/photo` 目录及子目录中，大小大于 `512k` 的图片，执行压缩处理
 
 压缩为最大宽度 `1280` 最大高度 `1280` 质量 `85`
 

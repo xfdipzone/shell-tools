@@ -19,10 +19,10 @@
 例如：
 
 ```shell
-readonly process_config=('mytest.php,120')
+readonly process_config=('process.php,120')
 ```
 
-`mytest.php` 为监控进程的关键字
+`process.php` 为监控进程的关键字
 
 `120` 为进程运行的超时时间（秒）
 

@@ -39,7 +39,7 @@ function get_etime_seconds(){
 }
 
 # 监控超时的进程关键字
-readonly process_config=('mytest.php,120')
+readonly process_config=('process.php,120')
 
 # 循环监控进程
 for config in ${process_config[*]}; do

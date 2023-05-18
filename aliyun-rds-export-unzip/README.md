@@ -32,7 +32,7 @@
 
 ### 3. 解压后的sql文件为utf8 bom
 
-如果我们执行这个sql创建数据表是使用例如php代码读取后执行，sql文件带utf8 bom会导致执行出错，因此需要把sql文件的utf8 bom头去掉。
+如果我们使用php代码读取这个sql文件执行，sql文件带utf8 bom会导致执行出错，因此需要把sql文件的utf8 bom头去掉。
 
 ---
 
@@ -42,6 +42,6 @@
 
 2.解压后文件按数据表名重命名
 
-3.删除`AUTO_INCREMENT`及`ROW_FORMAT`设定参数
+3.删除 `AUTO_INCREMENT` 及 `ROW_FORMAT` 设定参数
 
-4.去掉文件的`utf8 bom`头
+4.去掉文件的 `utf8 bom` 头

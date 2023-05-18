@@ -10,11 +10,11 @@ set -o errexit
 # Author:   fdipzone
 # Ver:      1.0
 
-csstmpl_path="/tmp/csstmpl"        # css tmpl path
-css_path="/tmp/css"                # css path
-replacetags=(".png" ".jpg" ".gif") # file type
-convertnum=0                       # save convert num
-search_child=$1                    # search child
+css_tmpl_path="/tmp/css_tmpl"       # css tmpl path
+css_path="/tmp/css"                 # css path
+replace_tags=(".png" ".jpg" ".gif") # file type
+convertnum=0                        # save convert num
+search_child=$1                     # search child
 
 echo ${search_child:=0} > /dev/null
 
@@ -30,7 +30,7 @@ function create(){
 
     cp "$tmplfile" "$dfile" #复制tmpl到目标文件
 
-    for tag in ${replacetags[*]} ; do
+    for tag in ${replace_tags[*]} ; do
         newtag="$tag?$(date +%Y%m%d%H%M%S)"
         sed -i "s/$tag/$newtag/g" "$dfile" #使用sed -i 替换文件内容
     done
@@ -45,7 +45,7 @@ function tolog(){
 }
 
 function update(){
-    if [ -d "$csstmpl_path" ] && [ -d "$css_path" ]; then
+    if [ -d "$css_tmpl_path" ] && [ -d "$css_path" ]; then
 
         if [ "$search_child" -eq 0 ]; then
             maxdepth=" -maxdepth 1 "
@@ -53,15 +53,15 @@ function update(){
             maxdepth=""
         fi
 
-        for file in $(find $csstmpl_path $maxdepth -name "*.css" -type f) ; do
-            dfile=${file/$csstmpl_path/$css_path}
+        for file in $(find $css_tmpl_path $maxdepth -name "*.css" -type f) ; do
+            dfile=${file/$css_tmpl_path/$css_path}
             create $file $dfile
         done
 
         echo "convert num: $convertnum"
 
     else
-        tolog "$csstmpl_path or $css_path not exists"
+        tolog "$css_tmpl_path or $css_path not exists"
     fi
 }
 
