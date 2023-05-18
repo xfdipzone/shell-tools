@@ -15,3 +15,5 @@ Shell开发的小程序工具，不定期更新。
 * [批量压缩图片工具](https://github.com/xfdipzone/Shell-Tools/tree/master/image-compress) (image-compress)
 
 * [Shell实现OSS上传下载删除工具](https://github.com/xfdipzone/Shell-Tools/tree/master/shell-oss) (shell-oss)
+
+* [终端文本高亮输出工具](https://github.com/xfdipzone/Shell-Tools/tree/master/highlight) (highlight)
