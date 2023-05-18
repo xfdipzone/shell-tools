@@ -15,6 +15,13 @@ function highlight(){
     # 正常样式
     local normal=$(tput sgr0)
 
+    # 设置默认值
+    local str=""
+    local color=""
+    local bgcolor=""
+    local bold=0
+    local underline=0
+
     # 获取配置参数
     local LONGOPTS="str:,color:,bgcolor:,bold:,underline:"
     local ARGS=$(getopt -o nothing --long $LONGOPTS -- "$@")
@@ -60,13 +67,6 @@ function highlight(){
                 ;;
         esac
     done
-
-    # 设置默认值
-    echo ${str:=""} > /dev/null
-    echo ${color:=""} > /dev/null
-    echo ${bgcolor:=""} > /dev/null
-    echo ${bold:=0} > /dev/null
-    echo ${underline:=0} > /dev/null
 
     # 设置文本颜色
     case "$color" in
