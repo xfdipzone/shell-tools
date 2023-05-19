@@ -74,4 +74,4 @@ export PATH="/opt/homebrew/opt/gnu-getopt/bin:$PATH"
 
 ### 效果图
 
-![效果图](https://github.com/xfdipzone/Shell-Tools/blob/master/highlight/demo.png)
+![效果图](https://github.com/xfdipzone/shell-tools/blob/master/highlight/demo.png)
