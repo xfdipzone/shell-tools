@@ -26,7 +26,7 @@ function backup(){
 
     else
         echo "${log_path} not exists"
-    fi 
+    fi
 }
 
 # 批量复制文件到指定目录
