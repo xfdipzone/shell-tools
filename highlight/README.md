@@ -8,6 +8,18 @@ Shell实现终端文本高亮输出工具
 
 使用 `shell` 实现一个小工具，可以设置终端文本的文字颜色，背景颜色，粗体，下划线。
 
+文本高亮需要调用 `tput` 命令，`tput` 命令通常包含在 `ncurses` 软件包中
+
+可以通过以下命令安装：
+
+```shell
+# Debian/Ubuntu系统
+sudo apt-get install ncurses-bin
+
+# CentOS/RHEL系统中
+sudo yum install ncurses
+```
+
 `Linux` 与 `Mac` 的 `getopt` 方法不一样，如果是 Mac 系统可以安装 `gnu-getopt` 来替换系统的 `getopt`
 
 ```shell
