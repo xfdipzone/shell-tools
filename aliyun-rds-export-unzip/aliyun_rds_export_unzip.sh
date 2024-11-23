@@ -4,7 +4,7 @@ set -o nounset
 set -o errexit
 
 # 解压阿里云导出的数据库zip文件，执行重命名，转utf8 not bom编码，删除无用语句等处理
-# 
+#
 # Date:     2017-12-18
 # Author:   fdipzone
 # Ver:      1.0
@@ -13,7 +13,7 @@ set -o errexit
 sqlfile=()
 
 # 遍历当前目录下所有zip文件
-for file in $(find . -name "*.zip" -type f) ; do  
+for file in $(find . -name "*.zip" -type f) ; do
 
     # 定义解压后重命名的文件名
     tmp_sqlfile=$(echo $file|sed 's/_[0-9]*_all_sql.zip/.sql/')
@@ -30,7 +30,7 @@ for file in $(find . -name "*.zip" -type f) ; do
 
 done
 
-# 遍历所有sql文件，删除无用语句，且转为utf8 not bom编码 
+# 遍历所有sql文件，删除无用语句，且转为utf8 not bom编码
 for f in ${sqlfile[*]}; do
 
     # 删除ROW_FORMAT=XXX
