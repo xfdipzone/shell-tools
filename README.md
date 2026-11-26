@@ -19,3 +19,5 @@ Shell开发的小程序工具，不定期更新。
 * [终端文本高亮输出工具](./highlight) (highlight)
 
 * [日志备份工具](./log-backup) (log-backup)
+
+* [Kubernetes ConfigMap 关键词搜索及服务追踪工具](./k8s-configmap-search/) (k8s-configmap-search)
