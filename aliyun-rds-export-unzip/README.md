@@ -45,3 +45,7 @@
 3.删除 `AUTO_INCREMENT` 及 `ROW_FORMAT` 设定参数
 
 4.去掉文件的 `utf8 bom` 头
+
+`test_user_1616950_all_sql.zip` 执行脚本处理后，会生成 `test_user.sql` 文件
+
+去掉 SQL 文件内容的 `AUTO_INCREMENT` 及 `ROW_FORMAT` 设定参数与文件编码的 `utf8 bom` 头
