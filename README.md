@@ -6,7 +6,7 @@ Shell开发的小程序工具，不定期更新。
 
 ## 程序目录
 
-* [阿里云RDS导出数据库结构整理工具](./aliyun-rds-export-unzip) (aliyun-rds-export-unzip)
+* [阿里云 RDS 导出数据库结构整理工具](./aliyun-rds-export-unzip) (aliyun-rds-export-unzip)
 
 * [更新CSS文件内引用文件版本工具](./css-update-version) (css-update-version)
 
